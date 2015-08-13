@@ -42,6 +42,21 @@ QuikBrew is a semi-automated brew contoller written for the Arduino.
     HOPADD10=-1<br>
     
 ##### Needed 3rd Party Libraries:<br>
-  OneWire <br>
-  DallasTemperature <br>
-  LiquidCrystal_I2C <br>
+   OneWire <br>
+   DallasTemperature <br>
+   LiquidCrystal_I2C <br>
+
+### Fermenation Logger
+The fermenation logger will log 2 temperatures and 1 humidity reading. The current use is a DS18B20 to monitor wort temperature and a DHT11 to monitor the fermentor temperature and humdity. It currenty will log the collected data every 30 seconds to and csv file stored on an SD Card. (Sorry no Fritzing schematic - maybe in the future)
+
+##### Hardware used:
+Arduino Uno <br>
+Adafruit Data Logging sheild (http://www.adafruit.com/products/1141) <br>
+DS18B20 <br>
+DHT11 <br>
+
+##### Needed 3rd Party Libraries:
+OneWire <br>
+DallasTemperature <br>
+DHT <br>
+RTClib <br>
